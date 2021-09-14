@@ -23,14 +23,3 @@ def is_valid_point(point):
     if not type(point[0]) in [int, float, np.int64, np.float64]: return False# or type(point[0]) is float): return False
     if not type(point[1]) in [int, float, np.int64, np.float64]: return False
     return True
-
-def extremum_for_points(a):
-    assert is_2dmatrix(a), "invalid points"
-
-    mi = np.min(a,axis = 0)
-    ma = np.max(a,axis = 0)
-
-    b = np.empty((a.shape[1],2))
-    b[:,0] = mi
-    b[:,1] = ma
-    return b
