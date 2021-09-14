@@ -1,4 +1,5 @@
 **A PointSorter Class**
+
 This class can sort a sequence of equally-sized float vectors in non-
 decreasing order. The column order by which it sorts the points is from
 index 0 to `l -1`, `l` the length of each vector. This ordering is identical
@@ -15,10 +16,7 @@ In the first approach, data is loaded into the `PointSorter` at instantiation.
 
 ```
 S = <s1,s2,s3>
-
 q = PointSorter(S)
-
-q.sort_it()
 
 print("SORTED DATA")
 print(q.newData)
